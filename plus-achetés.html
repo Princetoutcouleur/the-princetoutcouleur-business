@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princetoutcouleur Business</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Fontawesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .modal-dialog img {
+            width: 200px;
+        }
+    
+        @media (max-width: 500px) {
+            .modal-dialog img {
+                width: 300px;
+                margin-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light position-fixed">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./imgs/logo.png" alt="logo" width="80" height="40"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produit.html">Produits</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Types de produits
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./produit.html">Pour enfants</a></li>
+                                <li><a class="dropdown-item" href="./produit.html">Pour femmes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./produit.html">Pour hommes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./plus-achetés.html">Plus achetés</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Recherche..." aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Recherche</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container plus-achetés">
+        <div class="row" style="padding-top: 100px;">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card" style="width: 90%;">
+                    <img src="./imgs/The North Face.webp" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">The North Face
+                        100 GLACIER FULL ZIP - Veste polaire</h5>
+                        <p class="card-text">Profitez de l'hiver avec nos vestes trés confortables.</p>
+                        <p>&#11088 &#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="#" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal1">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="./imgs/The North Face.webp" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>The North Face
+                                                100 GLACIER FULL ZIP - Veste polaire</h4>
+                                                <hr>
+                                                <p>à partir de €485.00</p>
+                                                <button type="button" class="btn btn-dark w-100">Acheter</button>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <hr>
+                                                <p>
+                                                    <a class="btn btn-light w-100" data-bs-toggle="collapse"
+                                                        href="#collapseExample" role="button" aria-expanded="false"
+                                                        aria-controls="collapseExample">
+                                                        Description
+                                                    </a>
+                                                </p>
+                                                <p>
+                                                <div class="collapse" id="collapseExample">
+                                                    <div class="card card-body">
+                                                        Some placeholder content for the collapse component. This panel
+                                                        is hidden by default but revealed when the user activates the
+                                                        relevant trigger.
+                                                    </div>
+                                                </div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card" style="width: 90%;">
+                    <img src="./imgs/Urban Classics.webp" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Urban Classics
+                        CARGO JOGGING PANTS</h5>
+                        <p class="card-text">Trés élégant, souple et cofortable</p>
+                        <p>&#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="#" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="./imgs/Urban Classics.webp" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>Urban Classics
+                                                CARGO JOGGING PANTS</h4>
+                                                <hr>
+                                                <p>à partir de €485.00</p>
+                                                <button type="button" class="btn btn-dark w-100">Acheter</button>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <hr>
+                                                <p>
+                                                    <a class="btn btn-light w-100" data-bs-toggle="collapse"
+                                                        href="#collapseExample" role="button" aria-expanded="false"
+                                                        aria-controls="collapseExample">
+                                                        Description
+                                                    </a>
+                                                </p>
+                                                <p>
+                                                <div class="collapse" id="collapseExample">
+                                                    <div class="card card-body">
+                                                        Some placeholder content for the collapse component. This panel
+                                                        is hidden by default but revealed when the user activates the
+                                                        relevant trigger.
+                                                    </div>
+                                                </div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card" style="width: 90%;">
+                    <img src="./imgs/doudoune.webp" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">The North Face
+                        RETRO NUPTSE JACKET UNISEX</h5>
+                        <p class="card-text">Pour un confort en temps froid</p>
+                        <p>&#11088 &#11088 &#11088 </p>
+                        <!-- <a href="#" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal3">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="./imgs/doudoune.webp" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>The North Face
+                                                RETRO NUPTSE JACKET UNISEX</h4>
+                                                <hr>
+                                                <p>à partir de €485.00</p>
+                                                <button type="button" class="btn btn-dark w-100">Acheter</button>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <hr>
+                                                <p>
+                                                    <a class="btn btn-light w-100" data-bs-toggle="collapse"
+                                                        href="#collapseExample" role="button" aria-expanded="false"
+                                                        aria-controls="collapseExample">
+                                                        Description
+                                                    </a>
+                                                </p>
+                                                <p>
+                                                <div class="collapse" id="collapseExample">
+                                                    <div class="card card-body">
+                                                        Some placeholder content for the collapse component. This panel
+                                                        is hidden by default but revealed when the user activates the
+                                                        relevant trigger.
+                                                    </div>
+                                                </div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card" style="width: 90%;">
+                    <img src="./imgs/Nike Golf.webp" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Golf
+                        TECH - Casquette Rouge Claire</h5>
+                        <p class="card-text">Trop stylé et protége contre le soleil</p>
+                        <p>&#11088 &#11088 </p>
+                        <!-- <a href="#" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal4">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="./imgs/Nike Golf.webp" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>Homme Pantalon cargo à lettres à cordon</h4>
+                                                <hr>
+                                                <p>à partir de €485.00</p>
+                                                <button type="button" class="btn btn-dark w-100">Acheter</button>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <hr>
+                                                <p>
+                                                    <a class="btn btn-light w-100" data-bs-toggle="collapse"
+                                                        href="#collapseExample" role="button" aria-expanded="false"
+                                                        aria-controls="collapseExample">
+                                                        Description
+                                                    </a>
+                                                </p>
+                                                <p>
+                                                <div class="collapse" id="collapseExample">
+                                                    <div class="card card-body">
+                                                        Some placeholder content for the collapse component. This panel
+                                                        is hidden by default but revealed when the user activates the
+                                                        relevant trigger.
+                                                    </div>
+                                                </div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid bg-light footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <a href="https://www.instagram.com/baba_thiam__/"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/Babathiam01"><i class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="copyright-text text-center mb-3 mb-lg-0">
+                        <p class="mb-0">Copyright &copy; 2022 <a
+                                href="https://princetoutcouleur.github.io/Portfolio_Amadou_M_Thiam/">ThePrincetoutcouleur</a>.
+                            Tous droits
+                            réservés.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+</html>
